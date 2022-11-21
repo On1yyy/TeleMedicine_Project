@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/layout_background_main"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <TextView
+            android:id="@+id/change_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="건강 정보 입력"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="#000"/>
+
+
+        <TextView
+            android:id="@+id/insert_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 신장 :"
+            android:textSize="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="50dp"
+            android:textColor="#000"/>
+
+
+        <EditText
+            android:id="@+id/edit_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="cm"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/textview_outline_botton_only"/>
+
+
+        <TextView
+            android:id="@+id/weight_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 몸무게 :"
+            android:textSize="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="50dp"
+            android:textColor="#000"/>
+
+
+        <EditText
+            android:id="@+id/weight_insert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="kg"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/textview_outline_botton_only"/>
+
+
+        <Button
+            android:id="@+id/btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/button_background_ver2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

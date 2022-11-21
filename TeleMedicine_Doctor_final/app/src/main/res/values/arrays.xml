@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="videoResolutions">
+        <item>Default</item>
+        <item>4K (3840 x 2160)</item>
+        <item>Full HD (1920 x 1080)</item>
+        <item>HD (1280 x 720)</item>
+        <item>VGA (640 x 480)</item>
+        <item>QVGA (320 x 240)</item>
+    </string-array>
+
+    <string-array name="videoResolutionsValues">
+        <item>Default</item>
+        <item>3840 x 2160</item>
+        <item>1920 x 1080</item>
+        <item>1280 x 720</item>
+        <item>640 x 480</item>
+        <item>320 x 240</item>
+    </string-array>
+
+    <string-array name="cameraFps">
+        <item>Default</item>
+        <item>30 fps</item>
+        <item>15 fps</item>
+    </string-array>
+
+    <string-array name="startBitrate">
+        <item>Default</item>
+        <item>Manual</item>
+    </string-array>
+
+    <string-array name="videoCodecs">
+        <item>VP8</item>
+        <item>VP9</item>
+        <item>H264 Baseline</item>
+        <item>H264 High</item>
+    </string-array>
+
+    <string-array name="audioCodecs">
+        <item>OPUS</item>
+        <item>ISAC</item>
+    </string-array>
+
+    <string-array name="speakerphone">
+        <item>Auto (proximity sensor)</item>
+        <item>Enabled</item>
+        <item>Disabled</item>
+    </string-array>
+
+    <string-array name="speakerphoneValues">
+        <item>auto</item>
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+
+    <string-array name="roomListContextMenu">
+        <item>Remove favorite</item>
+    </string-array>
+    <string-array name="medicine">
+        <item>약선택</item>
+        <item>노바스크</item>
+        <item>다이크로질</item>
+        <item>라짓스</item>
+        <item>메글리티나이드게</item>
+        <item>메트포르민</item>
+        <item>비구아나이드계</item>
+        <item>설폰요오제</item>
+        <item>셀렉톨</item>
+        <item>아마릴</item>
+        <item>안지오텐신</item>
+        <item>알닥톤필름코팅</item>
+        <item>카두라엣스엘서방</item>
+        <item>콩코르</item>
+        <item>토렘</item>
+        <item>티아졸리딘디온계</item>
+        <item>하루닐디</item>
+        <item>하이트린</item>
+        <item>헤르벤</item>
+        <item>현대테놀민</item>
+        <item>혈관확장제</item>
+        <item>atorvastatin</item>
+        <item>DPP-4</item>
+        <item>Fluvastatin</item>
+        <item>Lovastatin</item>
+        <item>Pitavastatin</item>
+        <item>pravastatin</item>
+        <item>rosuvastatin</item>
+        <item>SGLT-2</item>
+        <item>Simvastatin</item>
+        <item></item>
+
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.carryingmedicine">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUD_SERVICE" />
+
+    <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name ="android.permission.FOREGROUND_SERVICE" />
+    <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+    <uses-permission
+        android:name="android.permission.CAPTURE_VIDEO_OUTPUT"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name ="android.permission.FOREGROUND_SERVICE" />
+    <meta-data android:name="android.max_aspect" android:value="2.1" />
+    <supports-screens android:largeScreens="true"
+        android:normalScreens="true" android:smallScreens="true"
+        android:anyDensity="true" />
+
+    <application
+
+    android:allowBackup="false"
+
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TeleMedicine"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".Main.MainActivity" />
+        <activity android:name=".News.ItemActivity" />
+        <activity android:name=".Chat.ChatActivity"/>
+        <activity android:name=".Main.PersonalActivity"/>
+        <activity android:name=".Main.PersonalHealthActivity"/>
+        <activity android:name=".Prescription.Prescription"/>
+        <activity android:name=".PasswordChange.PasswordChangeActivity"/>
+        <activity android:name=".Doctorlist.Doctor_List_Main" />
+        <activity android:name=".DoctorDetail.DoctorDtail" />
+        <activity android:name=".Clinic.Clinic_List_Main"/>
+
+        <activity android:name=".ClinicDetail.ClinicDtail"/>
+        <activity android:name=".Reservation.ReservationMain" />
+
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+        <service
+            android:name=".ClinicDetail.AlarmService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".ClinicDetail.AlarmForeService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+
+        <activity android:name=".Chat.ChatMainActivity"
+            android:label="chatting"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.LoginActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".Register.RegisterActivity"></activity>
+        <activity android:name=".RecordHealth.HealthRecord"></activity>
+        <activity
+            android:name=".AppRTC.ConnectActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="appr.tc"
+                    android:scheme="https" />
+                <data
+                    android:host="appr.tc"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppRTC.SettingsActivity"
+            android:label="@string/settings_name" />
+        <activity
+            android:name=".AppRTC.CallActivity"
+            android:configChanges="orientation|smallestScreenSize|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="fullUser"
+            android:theme="@style/CallActivityTheme" />
+    </application>
+    <uses-permission android:name="android.permission.FOREGROUD_SERVICE" />
+    <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+</manifest>

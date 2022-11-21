@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_background_main">
+
+        <TextView
+            android:id="@+id/chat_main_tag"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="채팅 입장"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:clickable="true"
+            android:onClick="clickImage"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="250dp"/>
+
+        <TextView
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="10"
+            android:hint="닉네임을 입력하세요!"
+            android:inputType="text"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/edit_outline"
+            android:textCursorDrawable="@drawable/et_name_cursor"
+            android:layout_below="@+id/iv_profile"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp" />
+        <!--    ems최소 글자로-->
+        <!--    android:textCursorDrawable="@null" 이면 글씨 색과 같은 커서색-->
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="입장"
+            android:onClick="clickBtn"
+            android:background="@drawable/button_background_small"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

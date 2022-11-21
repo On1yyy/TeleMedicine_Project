@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/health_height"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_background_main"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/healthTextView"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="건강 정보"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TableRow>
+                <TextView
+                    android:id="@+id/personal_height_tag"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:text="신장"
+                    android:textColor="#000"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+                <TextView
+                    android:id="@+id/personal_height"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:ems="8"
+                    android:gravity="right|center"
+                    android:hint="신장"
+                    android:inputType="textPersonName"
+                    android:shadowColor="#D59393"
+                    android:textSize="20dp"
+                    tools:ignore="TextFields"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/personal_weight_tag"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:text="몸무게"
+                    android:textColor="#000"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+                <TextView
+                    android:id="@+id/personal_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:ems="8"
+                    android:gravity="right|center"
+                    android:hint="몸무게"
+                    android:inputType="textLongMessage"
+                    android:textSize="20sp"
+                    tools:ignore="TextFields"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+             </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/personal_past_tag"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:text="과거병력"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+                <TextView
+                    android:id="@+id/personal_past"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:ems="8"
+                    android:gravity="right|center"
+                    android:hint="과거병력"
+                    android:inputType="textLongMessage"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/personal_family_tag"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:text="가족력"
+                    android:textColor="#000"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+                <TextView
+                    android:id="@+id/personal_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:ems="8"
+                    android:gravity="right|center"
+                    android:hint="가족력"
+                    android:inputType="textLongMessage"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/personal_drug_tag"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:text="복용중인 약물"
+                    android:textColor="#000"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+                <TextView
+                    android:id="@+id/personal_drug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:ems="8"
+                    android:gravity="right|center"
+                    android:hint="복용중인 약물"
+                    android:inputType="textLongMessage"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/personal_drink_tag"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:text="음주 정보"
+                    android:textColor="#000"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+                <TextView
+                    android:id="@+id/personal_drink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:ems="8"
+                    android:gravity="right|center"
+                    android:hint="음주 정보"
+                    android:inputType="textLongMessage"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/personal_smoke_tag"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:text="흡연 정보"
+                    android:textColor="#000"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+                <TextView
+                    android:id="@+id/personal_smoke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:ems="8"
+                    android:gravity="right|center"
+                    android:hint="흡연정보"
+                    android:inputType="textLongMessage"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/personal_surgical_tag"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:text="과거 입원 기록"
+                    android:textColor="#000"
+                    android:background="@drawable/textview_outline_botton_only"/>
+
+                <TextView
+                    android:id="@+id/personal_surgical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:ems="8"
+                    android:gravity="right|center"
+                    android:hint="과거 입원 기록"
+                    android:inputType="textLongMessage"
+                    android:textSize="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/textview_outline_botton_only"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/personal_check"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_background_login"
+            android:text="확인"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

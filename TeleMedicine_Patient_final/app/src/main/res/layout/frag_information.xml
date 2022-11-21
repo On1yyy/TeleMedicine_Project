@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/et_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/layout_background_main"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <ImageView
+                android:id="@+id/tv_id_tag"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mypage_v1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_id_tag"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="24dp"
+                android:hint="이름"/>
+
+            <TextView
+                android:id="@+id/nim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_name"
+                android:text="님의"
+                android:layout_marginTop="30dp"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="마이페이지"
+                android:textSize="24dp"
+                android:layout_below="@+id/text_name"
+                android:layout_toRightOf="@+id/tv_id_tag"
+                android:layout_marginLeft="23dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:background="#85ADFF"
+            android:layout_gravity="center"
+            android:layout_below="@+id/personalBirth_tag"
+            android:layout_marginTop="10dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/textview_outline_v1"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Service"
+                android:textSize="24dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_init"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="65dp"
+                android:background="@drawable/button_shadow"
+                android:layout_marginTop="40dp"
+                android:drawableTop="@drawable/privacy"
+                android:paddingTop="20dp"
+                android:text="개인정보"/>
+
+            <Button
+                android:id="@+id/btn_health"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_shadow"
+                android:layout_toRightOf="@+id/btn_init"
+                android:layout_marginTop="40dp"
+                android:drawableTop="@drawable/health_record"
+                android:paddingTop="20dp"
+                android:text="건강기록"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logout"
+                android:layout_below="@+id/btn_init"
+                android:layout_marginLeft="65dp"
+                android:background="@drawable/button_shadow"
+                android:text="로그아웃"
+                android:paddingLeft="10dp"
+                android:drawableTop="@drawable/logout_icon_48"
+                android:paddingTop="20dp"/>
+
+            <Button
+                android:id="@+id/btn_passChange"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/passwordchange"
+                android:layout_below="@+id/btn_health"
+                android:layout_toRightOf="@+id/btn_logout"
+                android:background="@drawable/button_shadow"
+                android:drawableTop="@drawable/change_pass_48"
+                android:paddingTop="20dp"
+                android:text="비밀번호 변경"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

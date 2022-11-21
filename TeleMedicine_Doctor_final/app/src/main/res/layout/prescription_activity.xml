@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:text="조 제   약 사"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="조제 연 월 일"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="의약품 조제명서"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pre_edit17" />
+
+    <EditText
+        android:id="@+id/pre_m1"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="아침, 저녁, 식후"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/pre_medicine1"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"></EditText>
+
+    <EditText
+        android:id="@+id/pre_m"
+        android:layout_width="180dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="아침, 저녁, 식후"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pre_m6"></EditText>
+
+    <EditText
+        android:id="@+id/pre_m6"
+        android:layout_width="180dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="처방할 약품 명칭"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pre_m5"></EditText>
+
+    <EditText
+        android:id="@+id/pre_m5"
+        android:layout_width="180dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="처방할 약품 명칭"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pre_medicine2"></EditText>
+
+    <EditText
+        android:id="@+id/pre_medicine2"
+        android:layout_width="180dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="처방할 약품 명칭"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pre_medicine1"></EditText>
+
+    <EditText
+        android:id="@+id/pre_medicine1"
+        android:layout_width="180dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="처방할 약품 명칭"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"></EditText>
+
+    <EditText
+        android:id="@+id/pre_m2"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="아침, 저녁, 식후"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/pre_medicine2"
+        app:layout_constraintTop_toBottomOf="@+id/pre_m1"></EditText>
+
+    <EditText
+        android:id="@+id/pre_edit15"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="아침, 저녁, 식후"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/pre_m5"
+        app:layout_constraintTop_toBottomOf="@+id/pre_m2"></EditText>
+
+    <EditText
+        android:id="@+id/pre_edit16"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="아침, 저녁, 식후"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/pre_m6"
+        app:layout_constraintTop_toBottomOf="@+id/pre_edit15"></EditText>
+
+    <EditText
+        android:id="@+id/pre_edit17"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:hint="아침, 저녁, 식후"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/pre_m"
+        app:layout_constraintTop_toBottomOf="@+id/pre_edit16"></EditText>
+
+    <TextView
+        android:id="@+id/pe_doctor"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:hint="처방한 의료인명을 입력하세요"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/pe_disease"></TextView>
+
+    <EditText
+        android:id="@+id/pe_disease"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:hint="질병명을 입력하세요"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/pe_number"></EditText>
+
+    <TextView
+        android:id="@+id/pe_number"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:hint="기관전화번호를 입력하세요"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/pe_hospital"></TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="처방전"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="건강보험"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="산재보험"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:text="기타"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="의료법 시행규칙 [별지 제9호서식]"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="발      급       일"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="33dp"
+        android:gravity="center"
+        android:text="환   자   성   명"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="33dp"
+        android:gravity="center"
+        android:text="생   년   월   일"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="33dp"
+        android:gravity="center"
+        android:text="의   료   기   관"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="33dp"
+        android:gravity="center"
+        android:text="기관 전화번호"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="33dp"
+        android:gravity="center"
+        android:text="질      병       명"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="처  방  약  품"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="33dp"
+        android:gravity="center"
+        android:text="처방 의료인명"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="처방 의약품의 명칭"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:text="용법(매식[전, 간, 후]적용"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/pe_date"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:hint="발급일을 입력하세요"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"></TextView>
+
+    <TextView
+        android:id="@+id/pe_name"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:hint="환자명을 입력하세요"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/pe_date"></TextView>
+
+    <TextView
+        android:id="@+id/pe_birth"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="19dp"
+        android:gravity="center_vertical"
+        android:hint="생년월일 정보"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/pe_name"></TextView>
+
+    <TextView
+        android:id="@+id/pe_hospital"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:hint="의료기관를 입력하세요"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/pe_birth"></TextView>
+
+    <Button
+        android:id="@+id/btn_prescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:text="저장"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+</androidx.constraintlayout.widget.ConstraintLayout>

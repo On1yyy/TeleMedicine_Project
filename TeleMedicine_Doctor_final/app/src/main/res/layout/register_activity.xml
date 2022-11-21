@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Register.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:background="@drawable/layout_background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="회원 가입"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="551dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/et_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:drawablePadding="5dp"
+
+                        android:ems="10"
+
+                        android:hint="ID"
+                        android:inputType="textPersonName"
+                        android:padding="20dp"
+
+                        android:weightSum="1" />
+
+                    <Button
+                        android:id="@+id/id_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/button_background_small"
+                        android:text="중복 확인"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:weightSum="2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/et_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:hint="BirthDay"
+                        android:inputType="textPersonName"
+                        android:padding="20dp"
+                        android:weightSum="1" />
+
+                    <Button
+                        android:id="@+id/but_calender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/button_background_small"
+                        android:text="C"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:weightSum="1" />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="423dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="470dp"
+                        android:orientation="vertical">
+
+
+                        <EditText
+                            android:id="@+id/et_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:padding="20dp" />
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:inputType="text"
+                            android:padding="20dp" />
+
+
+                        <EditText
+                            android:id="@+id/et_license"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="License"
+                            android:inputType="number"
+                            android:padding="20dp" />
+
+
+                        <EditText
+                            android:id="@+id/et_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="School"
+                            android:inputType="textPersonName"
+                            android:padding="20dp"
+                            android:weightSum="1" />
+
+                        <EditText
+                            android:id="@+id/et_hospital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="Hospital"
+                            android:inputType="textPersonName"
+                            android:padding="20dp"
+                            android:weightSum="1" />
+
+                        <EditText
+                            android:id="@+id/et_hNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="Hospital number"
+                            android:inputType="textPersonName"
+                            android:padding="20dp"
+                            android:weightSum="1" />
+
+                        <EditText
+                            android:id="@+id/et_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="Hospital Address"
+                            android:inputType="textPersonName"
+                            android:padding="20dp"
+                            android:weightSum="1" />
+
+                        <EditText
+                            android:id="@+id/et_class"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="Class"
+                            android:inputType="textPersonName"
+                            android:padding="20dp"
+                            android:weightSum="1" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/et_ok"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/button_background_login"
+                android:text="회원가입"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

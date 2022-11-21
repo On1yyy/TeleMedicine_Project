@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layout_background_main"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp" >
+
+
+            <TextView
+                android:id="@+id/re_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="예약 정보"
+                android:textSize="30dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/re_now_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="현재 증상"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/re_now_insert"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:ems="10"
+                android:hint="증상을 입력하세요"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/textview_outline_v1"/>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="날짜선택"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/re_calendar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/textview_outline_v2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+
+                <Button
+                    android:id="@+id/re_calendar_but"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:text="CALEANDER"
+                    android:background="@drawable/button_background_small"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="7dp"
+                    android:textSize="14dp"/>
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/re_check_but"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="시간 확인하기"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@drawable/button_background_small"
+                android:layout_gravity="center"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/re_time_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="시간선택"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp">
+
+                <RadioGroup
+                    android:id="@+id/re_time_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="20dp">
+
+                    <RadioButton
+                        android:id="@+id/t_9"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="9 : 00"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_9_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="9 : 30"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_10"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="10 : 00"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_10_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="10 : 30"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_11"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="11 : 00"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_11_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="11 : 30"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_12"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="12 : 00"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_12_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="12 : 30"
+                        android:background="@drawable/radio_outline" />
+
+                    <RadioButton
+                        android:id="@+id/t_13"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="13 : 00"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_13_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="13 : 30"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_14"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="14 : 00"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_14_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="14 : 30"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_15"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="15 : 00"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_15_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="15 : 30"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_16"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="16 : 00"
+                        android:background="@drawable/radio_outline"/>
+
+                    <RadioButton
+                        android:id="@+id/t_16_3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="16 : 30"
+                        android:background="@drawable/radio_outline_v2"/>
+
+                </RadioGroup>
+            </HorizontalScrollView>
+
+
+            <Button
+                android:id="@+id/re_apply_but"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="신청하기"
+                android:background="@drawable/button_state"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

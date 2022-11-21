@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/layout_background_main"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="의사 상세정보"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/detail_dimage"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/doctor_img_icon"/>
+
+            <TextView
+                android:id="@+id/detail_dname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="의사 이름"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:background="@drawable/edit_outline"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="#85ADFF"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+
+            <TextView
+                android:id="@+id/detail_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="생년월일"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/doctor_birth_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/dtail_major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="전공분야"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/class_icon_v2"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/detail_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="학력"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/doctor_school_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"/>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="#85ADFF"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/detail_hospitalname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="병원이름"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/hospital_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/dtail_Hadress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="주소"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/location_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/dtail_Hnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="전화번호"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/telephone_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"/>
+
+
+            <Button
+                android:id="@+id/detail_reservation"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="예약하기"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:background="@drawable/button_background_login"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
